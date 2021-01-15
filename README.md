@@ -226,7 +226,7 @@ You can now select "Finish". You will need to reboot your RaspberryPi and then, 
 You will need to add a library on your RaspberryPi. To do that use the command: 
 
 ```
-
+sudo apt-get install python-smbus python3-smbus python-dev
 ```
 
 You are now ready to make your first test with the MPU9250 connected to your RaspberryPI using the I2C communication. 
