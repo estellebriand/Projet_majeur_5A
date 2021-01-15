@@ -25,7 +25,7 @@ http://smartroom.metz.supelec.fr/ArchiveCartoTurtlebot/Projet_turtlebot.html
 
 ##### Robot Project - CPE Lyon 2020 / 2021
 ###
-### Created by Nicolas Guy on Mon 11/02/2021
+### Created by Nicolas Guy on Mon 11/01/2021
 
 
 This tutorial will show you how to implement a RPLidar on a RasberryPi 3B+ using ROS. All the test have been done on Ubuntu 18.04 and ROS Kinetic. 
@@ -95,7 +95,7 @@ This tutorial is going to show you how to use SLAM with a RPLidar connected to a
 
 ##### Robot Project - CPE Lyon 2020 / 2021
 ###
-### Created by Nicolas Guy on Mon 11/02/2021
+### Created by Nicolas Guy on Mon 11/01/2021
 
 Setting used:
   - Ubuntu 18.04
