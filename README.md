@@ -209,7 +209,21 @@ Setting used:
 
 ### Enable the I²C communication on the RaspberryPi
 
-If you haven't already worked with I²C before on your RaspberryPi you will have to enable to I²C communication. To do that you first need to download this package: 
+If you haven't already worked with I²C before on your RaspberryPi you will have to enable to I²C communication. To do that you first need to follow the next steps:
+
+Open a terminal and write this command
+```
+sudo raspi-config
+```
+This will launch the raspi-config utility. Select "Interfacing Options".
+
+Then select "I2C" and "Yes".
+
+You can now select "Finish". You will need to reboot your RaspberryPi and then, the I²C communication would be enabled on your RapsberryPi.
+
+### Test the MPU9250 on your RaspberryPi 3B+
+
+You are now ready to make your first test with the MPU9250 connected to your RaspberryPI using the I2C communication. 
 
 
 
