@@ -223,8 +223,39 @@ You can now select "Finish". You will need to reboot your RaspberryPi and then, 
 
 ### Test the MPU9250 on your RaspberryPi 3B+
 
+You will need to add a library on your RaspberryPi. To do that use the command: 
+
+```
+
+```
+
 You are now ready to make your first test with the MPU9250 connected to your RaspberryPI using the I2C communication. 
 
+To do that, big respect to Geir Istad and his github exemple he made. He said that everybody can use his code and the filter he made to get the Pitch/Yaw/ROll with an amazing precision and without a magnetometer (which is super impresive).
+
+You can find the project at this link: https://github.com/thisisG/MPU6050-I2C-Python-Class
+
+Open a terminal and do this command:
+
+```
+git clone https://github.com/thisisG/MPU6050-I2C-Python-Class.git
+```
+
+You will probably need to make all the python scripts executable (chmod +x). 
+
+Finally, on my MPU9250 I needed to change a bit the parameters of the algorithm. To do that I opened the MPU6050_example.py script and modified the line 79 like this:
+
+```
+print('yaw: ' + str(roll_pitch_yaw.z*2))
+```
+
+Then save and you can run the example code on a terminal
+
+```
+python MPU6050_example.py 
+```
+
+You should see the Pitch/Yaw/Roll on your terminal and the modification when you move the MPU9250. The MPU accumulate an error with the time so if you want something more precise without any error you can add a PID or a Kalman filter for example. 
 
 
 
