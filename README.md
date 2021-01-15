@@ -182,6 +182,37 @@ You should have your RPlidar working and the mapping being done on Rviz.
 
 # ---------------------------------------------------------------------------------------
 
+# Tuto: How to implement a MPU9250 on RaspberryPi 3B+ with python
+
+This tutorial is going to show you how to implement a MPU9250 on a RaspberryPi 3B+ and get the Pitch/Yaw/Roll. The MPU9250 is the same as a MPU6050 but has a gyroscope, accelerometer and magnetometer contrary to the MPU6050 which just have gyroscope and accelerometer. We will use a code working for a MPU6050 but it iss working for the MPU9250 as well (we just won't use the magnetometer)
+
+##### Robot Project - CPE Lyon 2020 / 2021
+###
+### Created by Nicolas Guy on Fri 15/01/2021
+
+Setting used:
+  - Ubuntu 18.04
+  - ROS Kinetic
+  - Catkin
+  - RaspberryPi 3B+
+
+### How to plug the MPU9250 to the RaspberryPi 3B+
+
+  You will need four jumpers to connect the MPU9250 to the RaspberryPi. 
+  
+  > The MPU9250 needs 3.3V (watch out not to connect it to 5V). The communication between the MPU9250 and the RaspberryPi is a I²C communication. One pin is for the Clock (SDL) and another one is for the datas (SDA)
+
+  - VCC -> Pin 1
+  - GND -> Pin 6
+  - SDA -> Pin 3
+  - SCL -> Pin 5 
+
+### Enable the I²C communication on the RaspberryPi
+
+If you haven't already worked with I²C before on your RaspberryPi you will have to enable to I²C communication. To do that you first need to download this package: 
+
+
+
 
 ### More Informations:
 
